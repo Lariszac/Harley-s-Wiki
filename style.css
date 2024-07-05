@@ -1,0 +1,347 @@
+/* estilo geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.titulos{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;   
+}
+
+.textoscomuns{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+/* Cabeçalho */
+
+header{
+    padding: 50px 5%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-desktop{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+}
+.Logo-site{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+header a{
+    color: #000;
+    text-decoration: none;
+}      
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Topo do site */
+
+section.topo{
+    padding: 50px 5%;
+    background-color: #000000;
+    height: 500px;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.topo h1{
+    color: #ffffff;
+}
+
+.topo .txt-topo h1  span{
+    color: #f38933;    
+}
+
+.topo .txt-topo p{
+    color: #ffffff;
+    margin: 30px 0;
+}
+
+.siteofc button{
+    padding: 10px 40px;
+    font-size: 15px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;  
+    cursor: pointer;
+    transition: .2s;   
+}
+
+.siteofc a{
+    color: #000;
+    text-decoration: none; 
+}
+    
+.siteofc button:hover{
+    box-shadow: 0px 0px 8px #ffffff88;
+    transform: scale(1.05);
+}
+
+.topo .img-topo img{
+    position: relative;
+    animation: flutuando 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuando{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* section.conteudo{
+    padding: 50px 5%;
+    height: 1000px;
+}
+
+.motos-imagens{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 168%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+} */
+
+.conteudo {
+    padding: 50px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+section.conteudo{
+    padding: 50px 5%;
+    background-color: #000000;
+    height: 650px; 
+    box-shadow: 0 0 80px 10px hsla(34, 97%, 66%, 0.267);
+}
+
+.motos-imagens {
+    width: 100%;
+    max-width: 800px; 
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 1px solid #ffffff;
+    align-items: center;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover {
+    box-shadow: 0px 0px 8px #ffffff;
+    transform: scale(1.05);
+    background-color: #ffffff;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+
+}
+
+.slides img{
+    height: 100%;
+    width: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+section.texto{
+    padding: 50px 5%;
+    background-color: #000000;
+    height: 1100px;
+
+}
+
+section.texto{
+    padding: 50px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+/* section.texto{
+    left: -20px;
+    background: linear-gradient(to left, black, rgba(206, 142, 68, 0.329));
+} */
+
+section.texto{
+background: radial-gradient(#301b01,black);
+}
+
+/* section.texto{
+    box-shadow:
+    -10px 0 20px -10px rgba(255, 165, 0, 0.7),
+    -20px 0 40px -20px rgba(255, 165, 0, 0.5),
+    10px 0 20px -10px rgba(255, 165, 0, 0.7),
+    20px 0 40px -20px rgba(255, 165, 0, 0.5);
+} */
+
+.curiosidades {
+    margin-top: 30px;
+}
+
+.Sobre1, .Sobre2, .Sobre3, .Sobre4, .Sobre5 {
+    width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #000000;
+}
+
+.curiosidades span {
+    color: #f38933;
+}
+
+/* .borda{
+    border-bottom: 2px solid black;
+} */
+
+section.bottom{
+    padding: 50px 5%;
+    background-color: #000000;
+    height: 600px;
+
+}
+
+section.bottom .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.bottom h1{
+    color: #ffffff;
+}
+
+.bottom .txt-bottom h1  span{
+    color: #f38933;    
+}
+
+.bottom .txt-bottom p{
+    color: #ffffff;
+    margin: 30px 0;
+}
+
+
+footer{
+    padding: 20px 4%;
+    background-color: #ffffff;    
+    box-shadow: 0 0 80px 10px hsla(34, 97%, 66%, 0.267);
+}
+
+/* 
+footer.flex{
+    justify-content: space-between;
+} */
+
+footer > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .btn-social button{
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+} */
